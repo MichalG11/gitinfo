@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>GITINFO</title>
+</head>
+
+<body>
+    <div style="text-align:center; ">
+        <br/>
+        <h2><font color="blue">Informacje o wybranym repozytorium</font></h2>
+        <br/><br/>
+
+        <h5>fullName:</h5>
+        <h3 th:text="${fullName}"></h3>
+        <br/>
+        <h5>description:</h5>
+        <h3 th:text="${description}"></h3>
+        <br/>
+        <h5>cloneUrl:</h5>
+        <h3 th:text="${cloneUrl}"></h3>
+        <br/>
+        <h5>stars:</h5>
+        <h3 th:text="${stars}"></h3>
+        <br/>
+        <h5>createdAt:</h5>
+        <h3 th:text="${createdAt}"></h3>
+    </div>
+</body>
+</html>
